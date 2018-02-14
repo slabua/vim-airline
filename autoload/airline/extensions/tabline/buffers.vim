@@ -90,7 +90,7 @@ function! airline#extensions#tabline#buffers#get()
     if get(g:, 'airline_powerline_fonts', 0)
       let space = s:spc
     else
-      let space= (pgroup == group ? s:spc : '')
+      let space = (pgroup == group ? s:spc : '')
     endif
 
     if get(g:, 'airline#extensions#tabline#buffer_idx_mode', 0)
