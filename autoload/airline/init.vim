@@ -139,10 +139,12 @@ function! airline#init#bootstrap()
   call airline#parts#define_raw('path', '%F%m')
   call airline#parts#define('linenr', {
         \ 'raw': '%{g:airline_symbols.linenr}%4l',
-        \ 'accent': 'bold'})
+        \ 'accent': 'none',
+        \ })
   call airline#parts#define('maxlinenr', {
         \ 'raw': '/%L%{g:airline_symbols.maxlinenr}',
-        \ 'accent': 'bold'})
+        \ 'accent': 'none',
+        \ })
   call airline#parts#define_function('ffenc', 'airline#parts#ffenc')
   call airline#parts#define_empty(['hunks', 'branch', 'obsession', 'tagbar',
         \ 'syntastic-warn', 'syntastic-err', 'eclim', 'whitespace','windowswap',
